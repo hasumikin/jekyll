@@ -3,6 +3,7 @@
 module Jekyll
   class Stevenson < ::Logger
     def initialize
+      super(nil)
       @progname = nil
       @level = DEBUG
       @default_formatter = Formatter.new
